@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Knows</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="images/banner.png" width="100%" height="100%">
+    </header>
+
+<div class="nav-links">
+    <ul align="center">
+		<li><a href="index.html"><b>Home</b></a></li>
+		<li><a href="product.html"><b>Products</b></a></li>
+		<li><a href="collection.html"><b>Collections</b></a></li>
+        <li><a href="bestseller.html"><b>Bestsellers</b></a></li>
+        <li><a href="valueset.html"><b>Value Sets</b></a></li>
+        <li><a href="upcoming.html"><b>Upcoming</b></a></li>
+    </ul>
+</div>
+
+<main>
+    <div class="hero">
+        <img src="images/home.jpg" alt="Home"> 
+        <div class="hero-text">
+            <h1>𝐹𝓁𝑜𝓌𝑒𝓇 𝒦𝓃𝑜𝓌𝓈</h1>
+            <h3><i>"𝔈𝔪𝔟𝔯𝔞𝔠𝔢 𝔶𝔬𝔲𝔯 𝔉𝔞𝔦𝔯𝔶𝔗𝔞𝔩𝔢 𝔰𝔬𝔲𝔩"</i></h3>
+            <a href="https://youtu.be/FLrfu3vKILQ?si=r28GVt-G86deHzCN" class="view-button" style="font-family:Lucida Console">VIEW &gt;</a>
+        </div>
+    </div>
+</main>
+
+<div class="container">
+    <div class="text-container">
+        <h2>♡ About Us ♡</h2>
+        <p style="font-family:Courier New" style="font-size: 0.1rem"><i>Flower Knows is a Chinese cosmetics brand celebrated for its whimsical, <br>
+		fairy-tale-inspired designs and high-quality makeup. Known for artistic <br>
+		packaging and imaginative themes, it appeals to beauty enthusiasts and collectors <br>
+		worldwide. Drawing inspiration from mythical creatures and vintage European aesthetics, <br>
+		the brand offers products with vibrant pigmentation, smooth textures, and <br>
+		lasting performance. Popular collections like the Unicorn Series, Angel Collection, <br>
+		and Rococo Collection showcase its unique, fantasy-inspired charm.</i> </p>
+    </div>
+</div>
+
+<section class="contact-section">
+    <img src="images/contact.png" alt="Contact Us">
+    <div class="contact-form">
+        <h2>𖹭 Contact Us 𖹭</h2>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea rows="4" placeholder="Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    <div class="social-media">
+		<a href="https://m.facebook.com/flowerknowscosmetics/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.tiktok.com/@flowerknowsglobal?_t=ZS-8sykUTm415E&_r=1"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/flowerknows_global?igsh=MXdyejdhbGJ5bzAwMw=="><i class="fab fa-instagram"></i></a>
+    </div>
+	</div>
+</section>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><b>&#8679;</b></button>
+
+<script>
+let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<audio autoplay loop>
+        <source src="barbie.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+</audio>
+
+<script>
+        const audio = document.getElementById("audio");
+
+        window.addEventListener("beforeunload", () => {
+            localStorage.setItem("audioTime", audio.currentTime);
+            localStorage.setItem("isPlaying", !audio.paused);
+        });
+
+        window.addEventListener("load", () => {
+            const savedTime = localStorage.getItem("audioTime");
+            const isPlaying = localStorage.getItem("isPlaying") === "true";
+
+            if (savedTime) {
+                audio.currentTime = parseFloat(savedTime);
+            }
+            if (isPlaying) {
+                audio.play();
+            }
+        });
+    </script>
+
+<div class="footer">
+	<p style="font-family:Lucida Console"><b>&copy; 2025 Flower Knows. All rights reserved.</b></p>
+</div>
+
+</body>
+</html>

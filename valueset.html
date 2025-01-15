@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Knows</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="images/banner.png" width="100%" height="100%">
+    </header>
+
+<div class="nav-links">
+    <ul align="center">
+		<li><a href="index.html"><b>Home</b></a></li>
+		<li><a href="product.html"><b>Products</b></a></li>
+		<li><a href="collection.html"><b>Collections</b></a></li>
+        <li><a href="bestseller.html"><b>Bestsellers</b></a></li>
+        <li><a href="valueset.html"><b>Value Sets</b></a></li>
+        <li><a href="upcoming.html"><b>Upcoming</b></a></li>
+    </ul>
+</div>
+
+<main>
+    <div class="hero">
+        <img src="images/home4.jpg" alt="Home"> 
+        <div class="hero-text">
+            <h1>𝒱𝒶𝓁𝓊𝑒 𝒮𝑒𝓉𝓈</h1>
+			<h3><i>"𝔄 𝔣𝔩𝔬𝔴𝔢𝔯 𝔨𝔫𝔬𝔴𝔰 𝔴𝔥𝔢𝔫 𝔦𝔱𝔰 𝔟𝔲𝔱𝔱𝔢𝔯𝔣𝔩𝔶 𝔴𝔦𝔩𝔩 𝔯𝔢𝔱𝔲𝔯𝔫"</i></h3>
+        </div>
+    </div>
+</main>
+
+<section id="value-sets">
+    <h2>♡ Value Sets ♡</h2>
+    <div class="value-sets">
+        <div class="product-card" style="font-family:Courier New">
+            <img src="images/value3.jpg" alt="All-In Gift Sets">
+            <h3>All-In Gift Sets</h3>
+			<p>RM599</p>
+        </div>
+        <div class="product-card" style="font-family:Courier New">
+            <img src="images/value1.jpg" alt="Build Your Sets">
+            <h3>Build Your Sets</h3>
+			<p>RM499</p>
+        </div>
+        <div class="product-card" style="font-family:Courier New">
+            <img src="images/value2.jpg" alt="Limited Sets">
+            <h3>Limited Sets</h3>
+			<p>RM799</p>
+        </div>
+    </div>
+</section>
+
+<br>
+
+<section class="value" align="center">
+<ul style="font-family: Lucida Console">
+		<li><a href="https://youtu.be/ZmICEOKBDGM?si=GFTAg8utktvFQvW6">Flower Knows Moonlight Mermaid Series</a> </li> <br>
+		<li><a href="https://youtu.be/ITmPYu4VwEw?si=h6CRUWSLZ5T2pu58">Flower Knows Strawberry Violet Sets</a> </li> <br>
+		<li><a href="https://youtu.be/oqt_khGAcIk?si=Y0fO47_Tj7URS40x">Flower Knows Circus Series</a> </li> <br>
+		<li><a href="https://youtu.be/C8xiiRPrerY?si=P-_F1-j6yy1tqeXP">Flower Knows Summer Cherry Love Series</a> </li> <br>
+		<li><a href="https://youtu.be/o_8JNGa1poc?si=tNoZ-bWIqSE4CWkY">Flower Knows Midsummer Fairytales Series</a> </li>
+</ul>
+</section>
+
+<audio autoplay loop>
+        <source src="barbie.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+</audio>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><b>&#8679;</b></button>
+
+<script>
+let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<div class="footer">
+	<p style="font-family:Lucida Console"><b>&copy; 2025 Flower Knows. All rights reserved.</b></p>
+</div>
+
+</body>
+</html>

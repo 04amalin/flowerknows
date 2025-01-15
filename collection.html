@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Knows</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="images/banner.png" width="100%" height="100%">
+    </header>
+
+<div class="nav-links">
+    <ul align="center">
+		<li><a href="index.html"><b>Home</b></a></li>
+		<li><a href="product.html"><b>Products</b></a></li>
+		<li><a href="collection.html"><b>Collections</b></a></li>
+        <li><a href="bestseller.html"><b>Bestsellers</b></a></li>
+        <li><a href="valueset.html"><b>Value Sets</b></a></li>
+        <li><a href="upcoming.html"><b>Upcoming</b></a></li>
+    </ul>
+</div>
+
+<main>
+    <div class="hero">
+        <img src="images/home2.jpg" alt="Home"> 
+        <div class="hero-text">
+            <h1>𝒞𝑜𝓁𝓁𝑒𝒸𝓉𝒾𝑜𝓃𝓈</h1>
+			<h3><i>"𝔄 𝔣𝔩𝔬𝔴𝔢𝔯 𝔡𝔬𝔢𝔰 𝔫𝔬𝔱 𝔲𝔰𝔢 𝔴𝔬𝔯𝔡𝔰 𝔱𝔬 𝔞𝔫𝔫𝔬𝔲𝔫𝔠𝔢 𝔦𝔱𝔰 𝔞𝔯𝔯𝔦𝔳𝔞𝔩 𝔱𝔬 𝔱𝔥𝔢 𝔴𝔬𝔯𝔩𝔡"</i></h3>
+        </div>
+    </div>
+</main>
+
+<section>
+    <h2>♡ Collections ♡</h2>
+    <div class="collections">
+        <div class="product-card" style="font-family:Courier New">
+            <img src="images/collect1.jpg" alt="Butterfly Cloud Collar Rouge Box">
+            <h3>Swan Ballet</h3>
+			<p>RM699</p>
+		</div>
+        <div class="product-card" style="font-family:Courier New">
+            <img src="images/collect2.jpg" alt="Little Angel 9-Color Eyeshadow Palette">
+            <h3>Little Angel Collection</h3>
+			<p>RM799</p>
+        </div>
+        <div class="product-card" style="font-family:Courier New">
+            <img src="images/collect3.jpg" alt="Violet Strawberry Rococo Glowy Lip Gloss">
+            <h3>Strawberry Rococo</h3>
+			<p>RM899</p>
+        </div>
+		<div class="product-card" style="font-family:Courier New">
+            <img src="images/collect4.jpg" alt="Violet Strawberry Rococo Glowy Lip Gloss">
+            <h3>Midsummer Farytales Collection</h3>
+			<p>RM999</p>
+        </div>
+    </div>
+	
+<section class="video-gallery">
+    <div class="video-grid">
+      <video controls>
+        <source src="videos/video1.mp4" type="video/mp4">
+      </video>
+      <video controls>
+        <source src="videos/video2.mp4" type="video/mp4">
+      </video>
+      <video controls>
+        <source src="videos/video3.mp4" type="video/mp4">
+      </video>
+      <video controls>
+        <source src="videos/video4.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+</section>
+
+<br>
+<br>
+
+<audio autoplay loop>
+        <source src="barbie.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+</audio>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><b>&#8679;</b></button>
+
+<script>
+let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+<div class="footer">
+	<p style="font-family:Lucida Console"><b>&copy; 2025 Flower Knows. All rights reserved.</b></p>
+</div>
+
+</body>
+</html>

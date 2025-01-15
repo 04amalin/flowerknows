@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Knows</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="images/banner.png" width="100%" height="100%">
+    </header>
+
+<div class="nav-links">
+    <ul align="center">
+		<li><a href="index.html"><b>Home</b></a></li>
+		<li><a href="product.html"><b>Products</b></a></li>
+		<li><a href="collection.html"><b>Collections</b></a></li>
+        <li><a href="bestseller.html"><b>Bestsellers</b></a></li>
+        <li><a href="valueset.html"><b>Value Sets</b></a></li>
+        <li><a href="upcoming.html"><b>Upcoming</b></a></li>
+    </ul>
+</div>
+
+<main>
+    <div class="hero">
+        <img src="images/home5.jpg" alt="Home" style="opacity:1.0"> 
+        <div class="hero-text">
+        </div>
+    </div>
+</main>
+
+<div class="container">
+    <div class="text-container">
+        <h2>♡ Coming Soon ♡</h2>
+        <div class="product-name">
+            <h3>~ 𝒮𝒯𝑅𝒜𝒲𝐵𝐸𝑅𝑅𝒴 𝒞𝒰𝒫𝐼𝒟 ~</h3>
+        </div>
+        <p>Imagine sweet strawberries, creamy cakes, and 
+		<br>everything you need for a dreamy, adorable tea party.</p>
+		<br>
+        <p style="font-family:Courier New"><b>JANUARY 15, 2025</b></p>
+    </div>
+</div>
+
+<div class="section">
+    <div class="bestsellers">
+        <div class="product-card" style="font-family:Courier New">
+            <img src="images/up1.jpg" alt="Butterfly Cloud Collar Rouge Box">
+            <h3>Strawberry Cupid Cake Lip Cream</h3>
+            <p>RM30</p>
+		</div>
+        <div class="product-card" style="font-family:Courier New">
+            <img src="images/up2.jpg" alt="Little Angel 9-Color Eyeshadow Palette">
+            <h3>Cupid Perfume Strawberry Cupid Perfume</h3>
+            <p>RM60</p>
+        </div>
+        <div class="product-card" style="font-family:Courier New">
+            <img src="images/up3.jpg" alt="Violet Strawberry Rococo Glowy Lip Gloss">
+            <h3>Blush & Matte Magic</h3>
+            <p>RM70</p>
+        </div>
+    </div>
+</div>
+
+<audio autoplay loop>
+        <source src="barbie.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+</audio>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><b>&#8679;</b></button>
+
+<script>
+let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<div class="footer">
+	<p style="font-family:Lucida Console"><b>&copy; 2025 Flower Knows. All rights reserved.</b></p>
+</div>
+
+</body>
+</html>
